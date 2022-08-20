@@ -15,10 +15,22 @@ body {
   line-height: 1.4;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
-  background-image: url('https://r4.wallpaperflare.com/wallpaper/246/739/689/digital-digital-art-artwork-illustration-abstract-hd-wallpaper-28f60d7850600cb8e04c418e2872141a.jpg');
-  background-size: cover;
-  background-position: center;
   color: #eee8ed;
+  height: 100%;
+}
+
+body::after {
+  content: '';
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-image: url('https://r4.wallpaperflare.com/wallpaper/246/739/689/digital-digital-art-artwork-illustration-abstract-hd-wallpaper-28f60d7850600cb8e04c418e2872141a.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .container {
@@ -108,9 +120,6 @@ textarea {
   font-family: inherit;
   font-size: inherit;
   padding: 0.8rem 1.2rem;
-}
-
-textarea::placeholder {
 }
 
 button {
