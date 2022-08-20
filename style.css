@@ -1,0 +1,131 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.4;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  background-image: url('https://r4.wallpaperflare.com/wallpaper/246/739/689/digital-digital-art-artwork-illustration-abstract-hd-wallpaper-28f60d7850600cb8e04c418e2872141a.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #eee8ed;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 72rem;
+  margin: 3rem auto 0 auto;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+#title {
+  font-weight: 700;
+}
+
+#survey-form {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(80, 19, 63, 0.8);
+  padding: 4rem;
+  border-radius: 0.3rem;
+}
+
+[type='text'],
+[type='email'],
+[type='number'],
+#dropdown {
+  width: 100%;
+  border-radius: 0.3rem;
+  padding: 0.8rem 1.2rem;
+  margin-bottom: 1.7rem;
+  border: 2px solid #ced4da;
+  font-family: inherit;
+  font-size: inherit;
+  transition: 0.4s;
+  outline: none;
+  color: #495057;
+}
+
+[type='text']:focus,
+[type='email']:focus,
+[type='number']:focus,
+#dropdown:focus,
+textarea:focus {
+  border: 2px solid orange;
+}
+
+label > [type='checkbox'] {
+  min-height: 1.8rem;
+  min-width: 1.8rem;
+  margin-right: 2rem;
+}
+
+label > [type='radio'] {
+  min-height: 1.8rem;
+  min-width: 1.8rem;
+  display: inline-block;
+  margin-right: 2rem;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.form-group {
+  margin-bottom: 1.7rem;
+}
+p {
+  margin-bottom: 0.5rem;
+}
+
+textarea {
+  width: 100%;
+  min-height: 12rem;
+  resize: vertical;
+  margin-bottom: 1.7rem;
+  border-radius: 0.3rem;
+  border: 2px solid #ced4da;
+  outline: none;
+  color: #495057;
+  transition: 0.3s;
+  font-family: inherit;
+  font-size: inherit;
+  padding: 0.8rem 1.2rem;
+}
+
+textarea::placeholder {
+}
+
+button {
+  border: none;
+  display: block;
+  padding: 1.6rem 1rem;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 0.3rem;
+  background: #41115c;
+  color: white;
+  font-weight: 700;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #4e156e;
+}
